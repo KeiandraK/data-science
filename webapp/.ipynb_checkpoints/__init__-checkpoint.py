@@ -1,3 +1,7 @@
-from .app import create_app       
-#APP is global variable   
-APP = create_app()
+from flask import Flask
+
+
+app = Flask(__name__)
+
+
+from webapp import routes
